@@ -13,14 +13,14 @@ const axiosInstance = axios.create({
 })
 
 axiosInstance.post(
-    "/v3/smart-contract/polygon-mumbai/CONTRACT_ADDRESS/call",
+    "/v3/smart-contract/polygon-mumbai/0xA20646289cA6D4C47ac58c96f3cee5Ee3Be21387/call",
     {
         functionName: "mint(address,string)",
         params: [
-            "YOUR WALLET",
-            "YOUR METADATA CID"
+            "0xf8C182917537d6496aD2358D046692E8670b93AA",
+            "bafkreicuwxa3dxre573423xbbgqa6zukr2qpyzzaralecaaqtjqktz42dq"
         ],
-        signerWallet: "DEFAULT STARTON WALLET",
+        signerWallet: "0xf8C182917537d6496aD2358D046692E8670b93AA",
         speed: "average"
     }
 ).then((response) => {
